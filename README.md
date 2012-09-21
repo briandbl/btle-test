@@ -5,5 +5,8 @@ Stripped down version of btstack which only contains the Bluetooth Low Energy pa
 
 Testing is done using a BT4.0 USB dongle from Delock which contains a Broadcom chipset.
 
+Requirements:
+  * libusb-1.0 (http://libusbx.org)
+
 
 
