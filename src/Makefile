@@ -1,7 +1,5 @@
 #
-# Makefile for MSP-EXP430F5438 demos with PAN1323 Bluetooth modules
-#
-# mspgcc is used: http://sourceforge.net/apps/mediawiki/mspgcc/index.php?title=MSPGCC_Wiki
+# Makefile for ble-test demo
 #
 
 BTSTACK_ROOT = ./btstack
@@ -30,10 +28,10 @@ COMMON = \
 CORE_OBJ   = $(CORE:.c=.o)
 COMMON_OBJ = $(COMMON:.c=.o)
 
-# create firmware image from common objects and example source file
+# create demo from common objects and example source file
 all: ble-test
 	
-# compile .ble description
+# compile .gatt description
 profile.h: profile.gatt
 	${BTSTACK_ROOT}/tools/compile-gatt.py $< $@ 
     
